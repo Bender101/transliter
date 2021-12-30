@@ -1,0 +1,46 @@
+    body {}
+    
+    #input-words {
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+    
+    .input-field {
+        margin-bottom: 20px;
+        background-color: goldenrod;
+        height: 40px;
+        width: 250px;
+        border: 1px solid rgb(156, 115, 9) border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .container {
+        width: 500px;
+        height: 600px;
+        margin: 100px auto;
+    }
+    
+    .blocks-daddy {
+        min-width: 500px;
+        min-height: 300px;
+        width: 520px;
+        height: 410px;
+    }
+    
+    .block {
+        min-height: 150px;
+        min-width: 250px;
+        width: 200px;
+        height: 400px;
+        margin: 0 1px;
+        border: 1px solid rgb(13, 60, 92);
+        border-radius: 15px;
+        background-color: dodgerblue;
+        font-family: cursive;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
