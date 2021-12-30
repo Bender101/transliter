@@ -1,24 +1,37 @@
-    body {}
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: ;
+    }
     
-    #input-words {
-        font-family: Verdana, Geneva, Tahoma, sans-serif
+    .input-words {
+        font-family: fantasy;
+    }
+    
+    button {
+        margin-left: 4px;
     }
     
     .input-field {
+        margin: 0 auto;
         margin-bottom: 20px;
         background-color: goldenrod;
         height: 40px;
         width: 250px;
-        border: 1px solid rgb(156, 115, 9) border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(156, 115, 9);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
     }
     
     .container {
-        width: 500px;
-        height: 600px;
+        width: 508px;
+        height: 480px;
         margin: 100px auto;
     }
     
@@ -27,6 +40,8 @@
         min-height: 300px;
         width: 520px;
         height: 410px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .block {
