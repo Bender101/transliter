@@ -1,61 +1,98 @@
+body {
+    max-width: 1260px;
+    min-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 1026px) {
     body {
-        display: flex;
-        justify-content: center;
-        align-items: ;
-    }
-    
-    .input-words {
-        font-family: fantasy;
-    }
-    
-    button {
-        margin-left: 4px;
-    }
-    
-    .input-field {
+        max-width: 770px;
         margin: 0 auto;
-        margin-bottom: 20px;
-        background-color: goldenrod;
-        height: 40px;
-        width: 250px;
+    }
+}
+
+@media (max-width: 769px) {
+    body {
+        max-width: 426px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        max-width: 340px;
+        min-width: 280px;
+        margin: 0 auto;
+    }
+}
+
+.input-words {
+    font-family: fantasy;
+}
+
+button {
+    margin-left: 4px;
+}
+
+.input-field {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: goldenrod;
+    height: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(156, 115, 9);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.container {
+    width: 508px;
+    height: 480px;
+    margin: 100px auto;
+}
+
+.blocks-daddy {
+    min-width: 500px;
+    min-height: 300px;
+    width: 520px;
+    height: 410px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 550px) {
+    .blocks-daddy {
+        max-width: 340px;
+        min-width: 280px;
         display: flex;
+        position: relative;
         justify-content: center;
         align-items: center;
-        border: 1px solid rgb(156, 115, 9);
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
     }
-    
-    .container {
-        width: 508px;
-        height: 480px;
-        margin: 100px auto;
-    }
-    
-    .blocks-daddy {
-        min-width: 500px;
-        min-height: 300px;
-        width: 520px;
-        height: 410px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .block {
-        min-height: 150px;
-        min-width: 250px;
-        width: 200px;
-        height: 400px;
-        margin: 0 1px;
-        border: 1px solid rgb(13, 60, 92);
-        border-radius: 15px;
-        background-color: dodgerblue;
-        font-family: cursive;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-    }
+}
+
+.block {
+    min-height: 150px;
+    min-width: 250px;
+    width: 200px;
+    height: 400px;
+    margin: 0 1px;
+    border: 1px solid rgb(13, 60, 92);
+    border-radius: 15px;
+    background-color: dodgerblue;
+    font-family: cursive;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
