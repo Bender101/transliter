@@ -98,3 +98,5 @@ button {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+
+.block :hover {}

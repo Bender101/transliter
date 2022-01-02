@@ -9,11 +9,7 @@ button.addEventListener('click', () => {
         inputText.value.length > 22 ? inputText.value.slice(0, 15) + '\u2026' : inputText.value;
     const blockWords = document.createElement('div');
     blockWords.className = 'dictionary';
-    blockWords.setAttribute('title', inputText.value);
+    blockWords.setAttribute('title');
     blockRu.appendChild(blockWords);
     blockWords.innerText = text;
 });
-
-blockWords.addEventListener('mouseover', () => {
-    blockWords.getAttribute('title').innerText
-})
