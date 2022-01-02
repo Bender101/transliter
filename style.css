@@ -1,11 +1,22 @@
+html {
+    min-height: 100%;
+    background: linear-gradient(to top, rgb(73, 73, 102), rgb(255, 167, 181));
+}
+
 body {
     max-width: 1260px;
     min-width: 300px;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: monospace;
+    color: rgb(75, 43, 51);
 }
 
 @media (max-width: 1026px) {
@@ -13,19 +24,26 @@ body {
         max-width: 770px;
         margin: 0 auto;
     }
+    h1 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 769px) {
     body {
+        justify-content: center;
         max-width: 426px;
         margin: 0 auto;
+    }
+    h1 {
+        font-size: 30px;
     }
 }
 
 @media (max-width: 550px) {
     body {
         max-width: 340px;
-        min-width: 280px;
+        min-width: 250px;
         margin: 0 auto;
     }
 }
@@ -48,24 +66,32 @@ button {
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(156, 115, 9);
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    box-shadow: 0 0 0.5em 0.2em olive;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
 }
 
 .container {
-    width: 508px;
-    height: 480px;
+    width: 555px;
+    height: 580px;
     margin: 100px auto;
+}
+
+@media (max-width: 550px) {
+    .container {
+        max-width: 300px;
+        min-width: 280px;
+    }
 }
 
 .blocks-daddy {
     font-size: 1.2em;
     min-width: 500px;
     min-height: 300px;
-    width: 520px;
+    width: 570px;
     height: 410px;
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +99,7 @@ button {
 
 @media (max-width: 550px) {
     .blocks-daddy {
-        max-width: 340px;
+        max-width: 300px;
         min-width: 280px;
         display: flex;
         position: relative;
@@ -82,21 +108,54 @@ button {
     }
 }
 
-.block {
+#blockRu {
     text-align: center;
     min-height: 150px;
     min-width: 250px;
     width: 200px;
-    height: 400px;
+    min-height: 350px;
+    height: auto;
     margin: 0 1px;
-    border: 1px solid rgb(13, 60, 92);
-    border-radius: 15px;
-    background-color: dodgerblue;
+    border: 12px solid rgb(12, 55, 104);
+    border-radius: 25px;
+    background-color: rgb(151, 206, 168);
     font-family: cursive;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
-.block :hover {}
+#blockTrans {
+    text-align: center;
+    min-height: 150px;
+    min-width: 200px;
+    width: 250px;
+    min-height: 350px;
+    height: auto;
+    margin: 0 1px;
+    border: 12px solid rgb(12, 55, 104);
+    border-radius: 25px;
+    background-color: rgb(107, 177, 247);
+    font-family: cursive;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+@media (max-width: 550px) {
+    #blockRu,
+    #blockTrans {
+        height: auto;
+    }
+}
+
+.dictionary {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
